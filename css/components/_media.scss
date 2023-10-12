@@ -1,0 +1,73 @@
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+    transition: 1s;
+  }
+  .hero {
+    &__image {
+      width: 50%;
+    }
+  }
+
+  .activity {
+    &__blocks {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      gap: 50px;
+
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+    transition: 1s;
+  }
+  .header {
+    &__menu {
+      display: none;
+    }
+    &__auth {
+      display: none;
+    }
+  }
+  .hero {
+    &__image {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+    transition: 1s;
+  }
+  .hero {
+    &__buttons {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .hero {
+    &__tag {
+      font-size: 32px;
+      transition: 1s;
+    }
+
+    &__title {
+      font-size: 32px;
+      transition: 1s;
+    }
+
+    &__btn {
+      display: none;
+      transition: 0.6s;
+    }
+  }
+}

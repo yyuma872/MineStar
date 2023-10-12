@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, a:focus {
+  outline: none;
+}
+
+:active, a:active {
+  outline: none;
+}
+
+header, footer, nav {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 400;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+  color: var(--text);
+}
+
+ul li {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+@font-face {
+  src: url("/fonts/TTNorms-Bold.woff2") format("woff2");
+  font-family: "ttnorms";
+  font-weight: 700;
+  font-style: normal;
+}
+:root {
+  --accent: #0153FF;
+  --text: #111111;
+  --regular-text: 16px;
+  --lineheight: 1;
+  --userfont: "Inter", sans-serif;
+  --systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+}
+
+body {
+  font-family: var(--userfont);
+  font-size: var(--regular-text);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+  transition: 1s;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  transition: 1s;
+}
+
+.header__content {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.header__logo span {
+  font-family: ttnorms;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.header__menu ul {
+  display: flex;
+  gap: 50px;
+}
+.header__link:hover {
+  color: var(--accent);
+  transition: 0.8s;
+}
+
+.btn {
+  font-size: 18px;
+  padding: 15px 30px;
+  border-radius: 15px;
+}
+.btn:hover {
+  transition: 0.6s;
+}
+.btn:active {
+  transition: 0.3s;
+}
+.btn__auth {
+  background: var(--accent);
+  color: #fff;
+}
+.btn__auth:hover {
+  background: none;
+  outline: 1px solid var(--accent);
+  color: var(--accent);
+}
+.btn__auth:active {
+  background: var(--accent);
+  color: #fff;
+}
+.btn__hero {
+  background: var(--accent);
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 22px 34px;
+}
+
+.hero {
+  background: #EAECFF;
+}
+.hero__content {
+  max-height: 560px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 55px 0;
+}
+.hero__info {
+  max-width: 482px;
+}
+.hero__tag {
+  font-size: 38px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--accent);
+  transition: 1s;
+}
+.hero__title {
+  font-size: 38px;
+  font-weight: bold;
+  transition: 1s;
+}
+.hero__title span {
+  color: var(--accent);
+}
+.hero__description {
+  margin: 20px 0;
+}
+.hero__buttons {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.hero__btn {
+  font-size: 20px;
+  font-weight: bold;
+}
+.activity {
+  margin: 100px 0;
+}
+.activity__content {
+  display: flex;
+  flex-direction: column;
+}
+.activity__title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: ttnorms;
+}
+.activity__description {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.activity__blocks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.activity__block {
+  max-width: 304px;
+}
+.activity__blockBody {
+  max-width: 304px;
+}
+.activity__blockTitle {
+  font-size: 20px;
+  font-family: ttnorms;
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+.activity__blockDescription {
+  font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+    transition: 1s;
+  }
+  .hero__image {
+    width: 50%;
+  }
+  .activity__blocks {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+    transition: 1s;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__auth {
+    display: none;
+  }
+  .hero__image {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+    transition: 1s;
+  }
+  .hero__buttons {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+@media (max-width: 520px) {
+  .hero__tag {
+    font-size: 32px;
+    transition: 1s;
+  }
+  .hero__title {
+    font-size: 32px;
+    transition: 1s;
+  }
+  .hero__btn {
+    display: none;
+    transition: 0.6s;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

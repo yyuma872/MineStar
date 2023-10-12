@@ -1,0 +1,45 @@
+.btn {
+
+  font-size: 18px;
+
+  padding: 15px 30px;
+  border-radius: 15px;
+
+  &:hover {
+    transition: 0.6s;
+  }
+  &:active {
+    transition: 0.3s;
+  }
+
+  &__auth {
+    background: var(--accent);
+    color: #fff;
+  }
+  &__auth:hover {
+    background: none;
+    outline: 1px solid var(--accent);
+    color: var(--accent);
+  }
+  &__auth:active {
+    background: var(--accent);
+    color: #fff;
+  }
+
+  &__hero {
+    background: var(--accent);
+
+    color: #fff;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 22px 34px;
+
+
+  }
+
+}

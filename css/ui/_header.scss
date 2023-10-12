@@ -1,0 +1,36 @@
+.header {
+  &__content {
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    span {
+      font-family: ttnorms;
+      font-size: 22px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__menu {
+    ul {
+      display: flex;
+
+      gap: 50px;
+      li {
+
+      }
+    }
+  }
+
+  &__link:hover {
+    color: var(--accent);
+    transition: 0.8s;
+  }
+
+}

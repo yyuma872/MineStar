@@ -1,0 +1,32 @@
+:root {
+  --accent: #0153FF;
+  --text: #111111;
+  --regular-text: 16px;
+  --lineheight: 1;
+  --userfont: 'Inter', sans-serif;
+  --systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+}
+
+body {
+  font-family: var(--userfont);
+  font-size: var(--regular-text);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+
+  transition: 1s;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  transition: 1s;
+}
