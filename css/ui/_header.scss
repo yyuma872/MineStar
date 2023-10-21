@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     span {
-      font-family: ttnorms;
+      font-family: ttnorms, serif;
       font-size: 22px;
       text-transform: uppercase;
     }
@@ -33,4 +33,81 @@
     transition: 0.8s;
   }
 
+  &__mobile {
+
+    &_close {
+      right: 0;
+      cursor: pointer;
+      img {
+        max-width: 27px;
+      }
+
+    }
+
+    &_burger {
+      display: none;
+
+      height: 27px;
+      width: 27px;
+
+      cursor: pointer;
+
+      span, span:before, span:after {
+        background: #000;
+        height: 2px;
+        width: 27px;
+        opacity: 1;
+        position: absolute;
+        transition: 0.3s ease-in-out;
+      }
+      span:before,
+      span:after {
+        content: '';
+      }
+
+      span:before {
+        left: 0px;
+        top: 20px;
+        width: 27px;
+      }
+
+      // MIDDLE
+      span {
+        width: 27px;
+      }
+
+      // BOTTOM
+      span:after {
+        left: 0px;
+        top: 10px;
+        width: 27px;
+      }
+
+    }
+
+    &_menu {
+      ul {
+        margin: 20px 0;
+      }
+      display: none;
+
+      transition: 0.8s;
+      padding: 50px;
+      gap: 20px;
+
+      position: fixed;
+      z-index: 20;
+      left: 0;
+      top: 0;
+
+      background: #fff;
+      height: 100%;
+      width: 100%;
+
+      overflow-y: hidden;
+
+    }
+  }
+
 }
+

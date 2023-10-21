@@ -1,6 +1,7 @@
 :root {
   --accent: #0153FF;
   --text: #111111;
+  --bg: #EAECFF;
   --regular-text: 16px;
   --lineheight: 1;
   --userfont: 'Inter', sans-serif;
@@ -12,6 +13,8 @@ body {
   font-size: var(--regular-text);
   color: var(--text);
   overflow-x: hidden;
+
+  scroll-behavior: smooth;
 }
 
 .wrapper {

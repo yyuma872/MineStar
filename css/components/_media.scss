@@ -18,6 +18,17 @@
 
     }
   }
+
+  .unic {
+    &__blocks {
+      &_creative {
+        max-width: 516px;
+      }
+      &_other {
+        max-width: 536px;
+      }
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -32,10 +43,47 @@
     &__auth {
       display: none;
     }
+
+    &__mobile {
+      &_burger {
+        display: flex;
+      }
+    }
   }
   .hero {
     &__image {
       display: none;
+    }
+  }
+  .unic {
+    &__blocks {
+
+      &_creative {
+        max-width: 345px;
+      }
+      &_creativeInfo {
+        ul {
+          flex-wrap: wrap;
+          gap: 20px;
+        }
+      }
+      &_bank {
+        max-width: 345px;
+      }
+      &_bankDescription {
+        margin-bottom: 70px;
+      }
+      &_mechanic {
+        max-width: 345px;
+      }
+      &_mechanicDescription {
+        margin-bottom: auto;
+      }
+      &_other {
+        max-width: 345px;
+      }
+
+
     }
   }
 }
@@ -49,6 +97,19 @@
     &__buttons {
       flex-wrap: wrap;
       gap: 15px;
+    }
+  }
+  .unic {
+    &__blocks {
+      justify-content: center;
+
+      &_bankDescription {
+        margin-bottom: 20px;
+      }
+
+      &_mechanicDescription {
+        margin-bottom: 20px;
+      }
     }
   }
 }

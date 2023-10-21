@@ -38,8 +38,34 @@
     gap: 12px;
 
     padding: 22px 34px;
+  }
 
+  &__unic {
+    background: #fff;
+    color: var(--accent);
+    font-weight: bold;
+  }
 
+  &__unic:hover {
+    background: var(--accent);
+    color: #fff;
+  }
+
+  &__buyformOne {
+    font-size: 20px;
+    background: #fff;
+    color: var(--accent);
+
+    font-weight: 600;
+  }
+
+  &__buyformTwo {
+    font-size: 20px;
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+
+    font-weight: 600;
   }
 
 }

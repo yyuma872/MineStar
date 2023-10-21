@@ -1,5 +1,5 @@
 .hero {
-  background: #EAECFF;
+  background: var(--bg);
   &__content {
     max-height: 560px;
     display: flex;
